@@ -94,8 +94,6 @@ class MaxPoolLayer(BaseLayer):
         _, _, Hout, Wout = output_grad.shape
 
         self.input_grad = np.zeros(self.input.shape)
-        print(self.output.shape)
-        print(output_grad.shape)
 
         for xn in range(N):
             for fn in range(C):
